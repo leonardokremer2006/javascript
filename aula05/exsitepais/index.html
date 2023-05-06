@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To verificate country</title>
+
+    <style>
+        body{
+            background: rgba(128, 128, 128, 0.384);
+
+        }
+
+        h1 {
+            font: bolder 24pt Arial;
+        }
+
+        label {
+            font-family: Arial;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Verificate Country</h1>
+    <label for="digitep">Digite de onde é: </label>
+    <input type="text" name="pais" id="pais_p">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res"></div>
+
+
+    <script>
+        
+        
+        function clicar() {
+            var p = document.getElementById('pais_p')
+            var resp = document.getElementById('res')
+            resp.innerHTML += `Você veio de: ${p.value}`
+            
+            if (p == 'Brasil') {
+                resp.innerHTML += `<p>Você é <strong>BRASILEIRO</strong></p>`
+            } else {
+                resp.innerHTML += `<p>Você é <strong>ESTRANGEIRO</strong></p>`
+            }
+            
+        }
+
+
+    </script>
+    
+</body>
+</html>
