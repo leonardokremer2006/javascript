@@ -1,0 +1,39 @@
+
+body {
+    font-family: Arial;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#container {
+    background-color: rgb(85, 129, 114);
+    height: 330px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#father {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    
+}
+
+#res {
+    margin: 15px auto;
+}
+
+#foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto
+}

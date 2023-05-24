@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="titulo">IDADES</h1>
+    </header>
+
+
+
+    <div id="father">
+        <div id="container">
+            <div id="inputs">
+                <p>Ano de nascimento: 
+                    <input type="number" name="num" id="year_placeholder" min="0">
+                </p>
+                <p>Sexo:
+                    <input type="radio" name="radsex" id="masc" value="HTML">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Feminino</label>
+                </p>
+                
+                <input type="button" value="Verificar" onclick= "verificar()">
+
+                <div id="res">
+                    <p id="rep">Complete para obter respostas...</p>
+    
+                </div>
+
+        
+            </div>
+
+        
+        
+        </div>
+    </div>
+
+
+
+
+<script>
+    function verificar() {
+      var data = new Date()
+      var ano = data.getFullYear()
+      var resposta_nascimento = document.querySelector('#year_placeholder')
+      var resposta_completa = document.getElementById('res')
+
+      if (resposta_nascimento.value.length == 0 || Number(resposta_nascimento.value > ano)) {
+        alert('[ERRO] Verifique os dados e tente novamente.....')
+      } else {
+        var sexo = document.getElementsByName('radsex')
+        // ElementsByName == varios elementos com o mesmo nome, por exemplo inputs, radio 
+        var idade = ano - Number(resposta_nascimento.value)
+        var genero = ''
+        var img = document.createElement('img')
+        img.setAttribute('id', 'foto')
+        if (sexo[0].checked) {
+            genero = 'Homem'
+            if (idade >= 0 && idade < 12) {
+                img.setAttribute('src', 'fotos/fotocriancah.jpg')
+                // criança
+            } else if (idade < 21) {
+                img.setAttribute('src', 'fotos/fotojovemh.jpg')
+                // jovem
+            } else if (idade < 50) {
+                img.setAttribute('src', 'fotos/fotoadultoh.jpg')
+                // adulto
+            }else {
+                img.setAttribute('src', 'fotos/fotoidosoh.jpg')
+                // idoso
+            }
+        }
+        if (sexo[1].checked) {
+            genero = 'Mulher'
+            if (idade >= 0 && idade < 12) {
+                img.setAttribute('src', 'fotos/fotocriancam.jpg')
+                // criança
+            } else if (idade < 21) {
+                img.setAttribute('src', 'fotos/fotojovemm.jpg')
+                // jovem
+            } else if (idade < 50) {
+                img.setAttribute('src', 'fotos/fotoadultam.jpg')
+                // adulta
+            }else {
+                img.setAttribute('src', 'fotos/fotoidosam.jpg')
+                // idosa
+            }
+        }
+      }
+      resposta_completa.style.textAlign = 'center'
+    //   centralizar com JavaScript
+      resposta_completa.innerHTML = `Sua idade é de ${idade} anos e seu genero é ${genero}`
+      resposta_completa.appendChild(img)
+
+
+      
+
+
+}
+</script>
+    
+</body>
+</html>
