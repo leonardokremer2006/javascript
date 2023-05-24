@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+
+body {
+    background-color: rgb(78, 75, 224);
+    font-family: Arial;
+}
+
+#titulo_inicial {
+    color: #fff;
+    text-align: center;
+    margin: 50px;
+    
+}
+
+.container_large {
+    background-color: rgb(255, 255, 255);
+    width: 550px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+    margin: auto;
+}
+
+#placeholder_time {
+    color: #000000;
+    text-align: center;
+    padding-top: 30px;
+    font-family: Arial;
+    font-size: 22px;
+    margin-bottom: 20px;
+
+   
+}
+
+
+#image {
+    text-align: center;
+} 
+
+
+
+.creditos_creator{
+    font-family: 'Josefin Sans';
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+
