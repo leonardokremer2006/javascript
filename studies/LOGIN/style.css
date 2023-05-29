@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Kanit&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(82, 15, 82);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+}
+
+#title {
+    color: #fff;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+
+#child {
+    display: flex;
+    
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 20px 1px black;
+    font-family: 'Kanit', sans-serif;
+    box-sizing: border-box;
+}
+#inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 170px;
+    box-shadow: none;
+    
+}
+
+
+#senha {
+    width: 170px;
+    border-radius: 4px;
+
+}
+
+#nome {
+    width: 170px;
+    border-radius: 4px;
+}
+
+#login_{
+    margin-right: 120px
+
+}
+
+#senha_{
+    margin-right: 120px;
+}
+
+#btn {
+    width: 173px;
+    height: 120px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#button_verificar {
+    width: 80px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+#resposta {
+    text-align: center;
+    
+
+}
