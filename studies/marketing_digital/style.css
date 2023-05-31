@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0
+
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: #fff;
+    font-family: 'Poppins';
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+}
+
+li {
+    display: inline-block;
+    padding: 20px;
+    
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(142, 37, 202);
+    transition: 0.3s;
+}
+
+#border_title {
+    border: 2px solid rgb(132, 14, 201);
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px rgba(132, 14, 201, 0.281);
+    
+}
+
+
+
+main {
+    display: flex;
+    margin-top: 45px;
+    justify-content: space-around;
+    
+    
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 20px;
+
+}
+
+p {
+    margin-top: 30px;
+    max-width: 450px;
+    font-family: 'Poppins';
+    color: #fff;
+    font-weight: 300;
+    line-height: 15px;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'Sarala';
+    line-height: 55px;
+    color:#fff;
+}
+
+#t1 {
+    color: rgb(132, 14, 201);
+}
+
+
+input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    border:none;
+    margin-top: 20px;
+}
+
+form [type="submit"] {
+    background-color:rgb(132, 14, 201);
+    color: #fff;
+    width: 50%;
+}
+
+
+img {
+    width: 580px;
+}

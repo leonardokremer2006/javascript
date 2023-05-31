@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    font-size: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px;
+}
+
+header > img {
+    height: 72px;
+}
+
+nav {
+
+    display: flex;
+    gap: 32px;
+    font-family: 'Sarala';
+    text-decoration: none;
+
+    
+}
+
+nav > a {
+    color:#fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+main {
+    border-top: 0.4px solid #fff2e7;
+    margin-bottom: 48px;
+}
+
+
+.conteudo-principal {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Righteous';
+    color: #FFF2E7;
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 400;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala';
+    color: #ECD6C4;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.conteudo-principal-escrito-botao {
+    font-family: 'Sarala';
+    color: #2F2325;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 60;
+    border:none;
+    box-shadow:  4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.conteudo-principal > img {
+    height: 430px;
+}
+
+.conteudo-secundario {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    
+
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #fff2e7;
+    padding-top: 45px;
+    padding-bottom: 20px;
+    font-family: 'Righteous';
+    color: #FFF2E7;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+
+}
+
+.conteudo-secundario > p {
+    font-family: 'Sarala';
+    font-weight: 300;
+    font-size: 18px;
+    color: #ECD6C4;
+}
+
+
+footer {
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+    
+    
+}
+
+footer > img {
+    display: block;
+    margin: 0 auto;
+    height: 48px;
+}
